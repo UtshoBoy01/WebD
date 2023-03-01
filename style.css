@@ -1,0 +1,153 @@
+body{
+    font-family: 'Anton', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.section_fast{
+    display: flex;
+    background-image: url(/img/top-banner.png);
+    background-repeat: no-repeat;
+    padding: 50px;
+}
+
+/* Header start */
+
+h1{
+    font-size: 40px;
+}
+
+h3{
+    font-size: 25px;
+}
+
+.fast_section_img{
+    width: 60%;
+    padding: 40px;
+}
+
+.fast_section_img img{
+    width: 120%;
+}
+
+a{
+
+    background-image: linear-gradient(#f1ac3d,#f5d672);
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: aliceblue;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+
+/* Header End*/
+
+/* Body Section / Body start */
+
+.section_secend{
+    display: flex;
+    background-image: url(/img/dream-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.secend_section_img{
+    width: 50%;
+    padding: 20px;
+}
+
+.secend_section_img img{
+    width: 100%;
+}
+
+/*Body Section / Body End */
+/* Body Section / End start  */
+
+/* .card-section{
+    background-image: url(/img/exp-bg.png);
+    background-repeat: no-repeat;
+} */
+.card-box{
+    display: flex;
+    padding: 0 70px;
+    background-image: url(/img/exp-bg.png);
+    background-repeat: no-repeat;
+
+}
+#card1{
+    border-left: 5px solid tomato;
+    
+}
+#card2{
+    border-left: 5px solid navy;
+}
+.card{
+    width: 50%;
+    padding: 40px;
+    margin: 0 25px;
+    box-shadow: 5px 8px 20px gray;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Body Section / End end  */
+
+/* footer start */
+footer{
+    padding-top: 80px;
+    text-align: center;
+    color: gray;
+}
+
+/* footer end */
+
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .section_fast{
+        flex-direction: column-reverse;
+    }
+    h1{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    .section_secend{
+        flex-direction: column;  
+    }
+    .card-box{
+        flex-direction: column;
+        gap: 20px;    
+    }
+ }
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    .section_fast{
+        flex-direction: column-reverse;
+    }
+    .section_secend{
+        flex-direction: column;  
+    }
+    .section_secend{
+        flex-direction: column;  
+    }
+    .card-box{
+        flex-direction: column;
+        gap: 30px;    
+    }
+ }
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {  }
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {  }
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {  }
+
+/* // XX-Large devices (larger desktops)
+// No media query since the xxl breakpoint has no upper bound on its width */
